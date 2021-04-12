@@ -71,6 +71,11 @@ usage: python yolov3_deepsort.py VIDEO_PATH
                                 [--save_path SAVE_PATH]          
                                 [--cpu]          
 
+usage: python detr_deepsort.py VIDEO_PATH
+
+# DETR + deepsort
+python detr_deepsort.py VIDEO_PATH
+
 # yolov3 + deepsort
 python yolov3_deepsort.py [VIDEO_PATH]
 
