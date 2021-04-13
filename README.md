@@ -119,3 +119,7 @@ Then you can try [train.py](deep_sort/deep/train.py) to train your own parameter
 - paper: [YOLOv3](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
 
 - code: [Joseph Redmon/yolov3](https://pjreddie.com/darknet/yolo/)
+
+- paper: [DETR](https://arxiv.org/abs/2005.12872)
+
+- code: [facebookresearch/detr](https://github.com/facebookresearch/detr)
