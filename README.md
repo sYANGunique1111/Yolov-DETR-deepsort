@@ -2,8 +2,8 @@
 
 
 ## Introduction
-This is an implement of MOT tracking algorithm deep sort. Deep sort is basicly the same with sort but added a CNN model to extract features in image of human part bounded by a detector. This CNN model is indeed a RE-ID model and the detector used in [PAPER](https://arxiv.org/abs/1703.07402) is FasterRCNN , and the original source code is [HERE](https://github.com/nwojke/deep_sort).  
-However in original code, the CNN model is implemented with tensorflow, which I'm not familier with. SO I re-implemented the CNN feature extraction model with PyTorch, and changed the CNN model a little bit. Also, I use **YOLOv3** to generate bboxes instead of FasterRCNN.
+This is an implement of MOT tracking algorithm deep sort. Deep sort is basicly the same with sort but added a CNN model to extract features in image of human part bounded by a detector. This CNN model is indeed a RE-ID model and the detector used in [PAPER](https://arxiv.org/abs/1703.07402) is FasterRCNN , and the original source code is [HERE](https://github.com/ZQPei/deep_sort_pytorch).  
+In the original code, it adopted **YOLOv3** for detection. I didn't touch that part but added **DETR** for another option of tracking as well. The usage to run with detr can be found in section 5: run demo.
 
 ## Dependencies
 - python 3 (python2 not sure)
@@ -29,7 +29,7 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 1. Clone this repository
 ```
-git clone git@github.com:ZQPei/deep_sort_pytorch.git
+git clone https://github.com/sYANGunique1111/Yolov-DETR-deepsort.git
 ```
 
 2. Download YOLOv3 parameters
@@ -71,10 +71,10 @@ usage: python yolov3_deepsort.py VIDEO_PATH
                                 [--save_path SAVE_PATH]          
                                 [--cpu]          
 
-usage: python detr_deepsort.py VIDEO_PATH
+usage: python detr_deepsort.py [VIDEO_PATH]
 
 # DETR + deepsort
-python detr_deepsort.py VIDEO_PATH
+python detr_deepsort.py [VIDEO_PATH]
 
 # yolov3 + deepsort
 python yolov3_deepsort.py [VIDEO_PATH]
