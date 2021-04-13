@@ -3,7 +3,7 @@
 
 ## Introduction
 This is an implement of MOT tracking algorithm deep sort. Deep sort is basicly the same with sort but added a CNN model to extract features in image of human part bounded by a detector. This CNN model is indeed a RE-ID model and the detector used in [PAPER](https://arxiv.org/abs/1703.07402) is FasterRCNN , and the original source code is [HERE](https://github.com/ZQPei/deep_sort_pytorch).  
-In the original code, it adopted **YOLOv3** for detection. I didn't touch that part but added **DETR** for another option of tracking as well. The usage to run with detr can be found in section 5: run demo.
+In the original code, it adopted **YOLOv3** for detection. I didn't touch that part but added **DETR** as another option for detection as well. The usage to run with detr can be found in section 5: run demo.
 
 ## Dependencies
 - python 3 (python2 not sure)
